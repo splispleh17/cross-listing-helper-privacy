@@ -14,7 +14,7 @@
 </head>
 <body><main>
   <h1>Cross-Listing Helper Privacy Policy</h1>
-  <p class="date">Effective October 5, 2026 · Local development prototype, version 0.2</p>
+  <p class="date">Effective October 5, 2026 · Local development prototype, version 0.3</p>
   <p>This policy describes the current Cross-Listing Helper Chrome extension and its companion service running on your computer. It is a separate application from AI Listing Writer. It is not affiliated with or endorsed by eBay, Poshmark, Depop, or Mercari.</p>
   <h2>Information used by the application</h2>
   <p>The extension saves item information you enter or import: titles, descriptions, prices, brands, sizes, colors, conditions, eBay listing identifiers and links, source photo URLs, and destination draft edits.</p>
@@ -24,7 +24,7 @@
   <p>The eBay access token is configured in a local <code>.env</code> file and read into the companion service's memory. It is not stored in extension storage or backups. The file is plain text and should be kept private. The service generates a temporary pairing key, displayed in its command window and entered into the extension page. The key changes when the service restarts.</p>
   <h2>How information is used and shared</h2>
   <p>Item information is used to prepare and review listing drafts, retain your edits, and export backups. The companion service sends your access token and listing requests to eBay to perform imports. This version does not send your saved inventory to an application operator's server, sell it, use it for advertising, or send it to an AI provider. It includes no application analytics or advertising trackers.</p>
-  <p>Copy buttons place the chosen text or URL on your clipboard. If you open a source photo, original listing, or destination marketplace, your browser connects to that third-party website. If you paste information into a marketplace, that marketplace receives it under its own policies. Opening Mercari's importer does not automatically transfer data or publish a listing.</p>
+  <p>Copy buttons place the chosen text or URL on your clipboard. If you load photo previews or open a source photo, original listing, or destination marketplace, your browser connects to that third-party website. Photo previews load only when you request them. If you paste information into a marketplace, that marketplace receives it under its own policies. Opening Mercari's importer does not automatically transfer data or publish a listing.</p>
   <h2>Retention and deletion</h2>
   <p>Items remain in local extension storage until that storage is cleared or the extension is uninstalled. Exported backups remain until you delete the files yourself. To remove the locally configured token, stop the companion service and remove it from the <code>.env</code> file or delete that file. Stopping the service clears its in-memory session data. You can also revoke application access through eBay's account controls.</p>
   <p>The operator does not maintain a separate cloud copy of your inventory. Other people or software with access to your computer may be able to access local files or data; this prototype does not provide encrypted storage.</p>
