@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Cross-Listing Helper — Privacy Policy</title>
+  <style>
+    body{font-family:system-ui,sans-serif;color:#20372e;background:#f5f7f5;margin:0;line-height:1.65}
+    main{max-width:760px;margin:40px auto;padding:32px;background:white;border-radius:12px}
+    h1,h2{line-height:1.25}h1{font-size:30px}h2{font-size:21px;margin-top:30px}
+    .date{color:#607369}a{color:#21644e}@media(max-width:600px){main{margin:0;padding:24px;border-radius:0}}
+  </style>
+</head>
+<body><main>
+  <h1>Cross-Listing Helper Privacy Policy</h1>
+  <p class="date">Effective October 5, 2026 · Local development prototype, version 0.2</p>
+  <p>This policy describes the current Cross-Listing Helper Chrome extension and its companion service running on your computer. It is a separate application from AI Listing Writer. It is not affiliated with or endorsed by eBay, Poshmark, Depop, or Mercari.</p>
+  <h2>Information used by the application</h2>
+  <p>The extension saves item information you enter or import: titles, descriptions, prices, brands, sizes, colors, conditions, eBay listing identifiers and links, source photo URLs, and destination draft edits.</p>
+  <p>If you configure eBay import, the companion service uses a seller-authorized eBay user access token to request active listings and details of an item you select through eBay's official APIs. API responses can contain additional seller, listing, or transaction-related information. The service passes responses to the extension for processing; the extension saves the item fields described above rather than the complete API responses.</p>
+  <h2>Where information is stored</h2>
+  <p>Saved items and drafts are stored in Chrome's local extension storage on your computer. This version does not use Chrome Sync or an application cloud database. Backups you export are saved as JSON files wherever you choose to download them.</p>
+  <p>The eBay access token is configured in a local <code>.env</code> file and read into the companion service's memory. It is not stored in extension storage or backups. The file is plain text and should be kept private. The service generates a temporary pairing key, displayed in its command window and entered into the extension page. The key changes when the service restarts.</p>
+  <h2>How information is used and shared</h2>
+  <p>Item information is used to prepare and review listing drafts, retain your edits, and export backups. The companion service sends your access token and listing requests to eBay to perform imports. This version does not send your saved inventory to an application operator's server, sell it, use it for advertising, or send it to an AI provider. It includes no application analytics or advertising trackers.</p>
+  <p>Copy buttons place the chosen text or URL on your clipboard. If you open a source photo, original listing, or destination marketplace, your browser connects to that third-party website. If you paste information into a marketplace, that marketplace receives it under its own policies. Opening Mercari's importer does not automatically transfer data or publish a listing.</p>
+  <h2>Retention and deletion</h2>
+  <p>Items remain in local extension storage until that storage is cleared or the extension is uninstalled. Exported backups remain until you delete the files yourself. To remove the locally configured token, stop the companion service and remove it from the <code>.env</code> file or delete that file. Stopping the service clears its in-memory session data. You can also revoke application access through eBay's account controls.</p>
+  <p>The operator does not maintain a separate cloud copy of your inventory. Other people or software with access to your computer may be able to access local files or data; this prototype does not provide encrypted storage.</p>
+  <h2>This policy website</h2>
+  <p>When hosted on GitHub Pages, this page is served by GitHub. GitHub may process technical request information, such as your IP address, under its own privacy statement. This page contains no forms, analytics scripts, or external fonts.</p>
+  <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> · <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260">eBay's privacy notice</a></p>
+  <h2>Questions and changes</h2>
+  <p>For privacy questions about this prototype, contact the maintainer through the Issues section of the GitHub repository publishing this page. Do not post passwords, access tokens, private inventory, or other sensitive information in a public issue.</p>
+  <p>If future versions add cloud storage, additional marketplace connections, analytics, or other data processing, this policy will be updated to describe those changes. The effective date at the top identifies this version.</p>
+</main></body>
+</html>
